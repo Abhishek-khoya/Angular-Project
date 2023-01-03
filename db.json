@@ -1,0 +1,43 @@
+{
+  "Employees": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "firstName": "Pratik",
+      "lastName": "khoya",
+      "email": "prateek@gmail.com",
+      "phoneNumber": 4563217890,
+      "hireDate": "2022-12-02",
+      "designation": 1,
+      "gender": "M",
+      "salary": 1000000,
+      "isMarried": true,
+      "id": 2
+    },
+    {
+      "firstName": "Pratik",
+      "lastName": "khoya",
+      "email": "prateek@gmail.com",
+      "phoneNumber": 4569871230,
+      "hireDate": "2022-12-22T18:30:00.000Z",
+      "designation": 1,
+      "gender": "M",
+      "salary": 45630000,
+      "isMarried": true,
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
