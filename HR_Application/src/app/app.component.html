@@ -1,0 +1,22 @@
+<p>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>home</mat-icon>
+      </button>
+      <span>HR Application</span>
+      <span class="example-spacer"></span>
+      <button mat-raised-button color="warn" (click)="addDesignation()" >Add Designation <mat-icon matSuffix>add</mat-icon></button>&nbsp;
+      <button mat-raised-button color="warn" (click)="addEmployee()" >Add Employee <mat-icon matSuffix>add</mat-icon></button>
+    </mat-toolbar-row>
+
+    <!-- <mat-toolbar-row>
+      <span>Welcome To Employee Management Portal</span>
+      <span class="example-spacer"></span>
+      
+
+    </mat-toolbar-row> -->
+  </mat-toolbar>
+</p>
+<app-list-employees></app-list-employees>
+<router-outlet></router-outlet>

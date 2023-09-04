@@ -1,0 +1,82 @@
+<h1 mat-dialog-title>Add Employee</h1>
+<div mat-dialog-content>
+    <form [formGroup]="employeeForm">
+        <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input formControlName="firstName" matInput placeholder="Ex. John">   
+            <mat-error *ngIf="employeeForm.controls['firstName'].hasError('required')">First Name is required</mat-error>
+                <!-- <mat-error *ngIf="employeeForm.controls['firstName'].hasError('pattern')">Only Alphabate with
+                    space between 2 to 20 charecters
+                </mat-error> -->
+        </mat-form-field>
+        &nbsp;
+        <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input formControlName="lastName" matInput placeholder="Ex. Doe">
+            <mat-error *ngIf="employeeForm.controls['lastName'].hasError('required')">Last Name is required</mat-error>
+                <!-- <mat-error *ngIf="employeeForm.controls['lastName'].hasError('pattern')">Only Alphabate with
+                    space between 2 to 20 charecters
+            </mat-error> -->
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+        <mat-icon matSuffix>email</mat-icon>
+        <mat-error *ngIf="employeeForm.controls['email'].hasError('email')">
+            Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="employeeForm.controls['email'].hasError('required')">
+            Email is required
+        </mat-error>
+    </mat-form-field>
+    &nbsp;
+    <mat-form-field class="example-full-width">
+        <mat-label>Telephone</mat-label>
+        <span matPrefix>+91 &nbsp;</span>
+        <input formControlName="phoneNumber" type="text" matInput placeholder="555-555-1234">
+        <mat-icon matSuffix>dialpad</mat-icon>
+        <mat-error *ngIf="employeeForm.controls['phoneNumber'].hasError('required')">Phone Number required</mat-error>
+            <mat-error *ngIf="employeeForm.controls['phoneNumber'].hasError('pattern')">&nbsp;Please enter 10 Digit Phone Number</mat-error>
+    </mat-form-field><br>
+    <!-- <input type="date" formControlName="hireDate" [(ngModel)]="addEmployeeRequest.hireDate"> -->
+    <mat-form-field appearance="fill" class="example-form-field">
+        <mat-label>Hire Date</mat-label>    
+        <input formControlName="hireDate" matInput [matDatepicker]="datepicker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+        <mat-datepicker #datepicker>
+            <mat-datepicker-actions>
+                <button mat-button matDatepickerCancel>Cancel</button>
+                <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+            </mat-datepicker-actions>
+        </mat-datepicker>
+        <mat-error *ngIf="employeeForm.controls['hireDate'].hasError('required')">Date of hire is required</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Designation</mat-label>
+        <mat-select formControlName="designation">
+            <mat-option [value]="designation.designationTitle" *ngFor="let designation of designations">
+                {{designation.designationTitle}}
+            </mat-option>
+        </mat-select><mat-icon matSuffix>work</mat-icon>
+        <mat-error *ngIf="employeeForm.controls['designation'].hasError('required')">Designation is required</mat-error>
+    </mat-form-field>&nbsp;&nbsp;
+    <mat-form-field>
+        <mat-label>Salary</mat-label>
+        <input formControlName="salary" type="number" matInput placeholder="Salary" value="">
+        <mat-icon matSuffix> attach_money</mat-icon>   
+        <mat-error *ngIf="employeeForm.controls['salary'].hasError('required')">Salary is required</mat-error>
+    </mat-form-field><br>
+    <mat-radio-group formControlName="gender" aria-label="Select an option">
+        <mat-radio-button value="M">Male</mat-radio-button><mat-icon matSuffix>male</mat-icon>
+        <mat-radio-button value="F">Female</mat-radio-button><mat-icon matSuffix>female</mat-icon>
+        <!-- <mat-error *ngIf="employeeForm.controls['gender'].hasError('required')">Gender is required</mat-error> -->
+    </mat-radio-group><br>
+    <mat-checkbox formControlName="isMarried" class="example-margin"[(ngModel)]="addEmployeeRequest.isMarried"> is Married ?</mat-checkbox>
+    <!-- <mat-error *ngIf="employeeForm.controls['isMarried'].hasError('required')">Gender is required</mat-error> -->
+    <div mat-dialog-actions [align]="'end'">
+        <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+        <button style="margin: left 8px;" mat-raised-button color="primary" (click)="addEmployee()">Add</button>
+    </div>
+</form>
+</div>

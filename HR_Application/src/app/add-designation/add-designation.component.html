@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Add Designation</h1>
+<div mat-dialog-content>
+    <form [formGroup]="designationForm">
+        <mat-form-field class="example-full-width">
+            <mat-label>Designation Title</mat-label>
+            <input matInput formControlName="designationTitle" placeholder="Ex. Manager"><mat-icon matSuffix>work</mat-icon>   
+        </mat-form-field>
+        <div mat-dialog-actions [align]="'end'">
+            <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+            <button style="margin: left 8px;" mat-raised-button color="primary" (click)="addDesignation()">Add</button>
+        </div>
+    </form>
+</div>

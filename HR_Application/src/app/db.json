@@ -1,0 +1,141 @@
+{
+  "Employees": [
+    {
+      "firstName": "Junaid",
+      "lastName": "qureshi",
+      "email": "junaid@gmail.com",
+      "phoneNumber": "7876541234",
+      "hireDate": "2023-01-25T18:30:00.000Z",
+      "designation": "Python Developer",
+      "gender": "M",
+      "salary": 100000000,
+      "isMarried": false,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "firstName": "Abhishek",
+      "lastName": "Khoya",
+      "email": "abhishek@gmail.com",
+      "phoneNumber": "8981234568",
+      "hireDate": "2022-10-11T18:30:00.000Z",
+      "designation": "Trainee Programmer",
+      "salary": 10000000,
+      "gender": "M",
+      "isMarried": false
+    },
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@gmail.com",
+      "phoneNumber": "8907543215",
+      "hireDate": "2023-01-25T18:30:00.000Z",
+      "designation": "Sr. Software Engineer",
+      "gender": "M",
+      "salary": 599990,
+      "isMarried": true,
+      "id": 7
+    },
+    {
+      "firstName": "Teena",
+      "lastName": "Jain",
+      "email": "teena@gmail.com",
+      "phoneNumber": "6789054321",
+      "hireDate": "2023-01-10T18:30:00.000Z",
+      "designation": "Node Developer",
+      "gender": "F",
+      "salary": 300000,
+      "isMarried": true,
+      "id": 8
+    },
+    {
+      "firstName": "Ritik",
+      "lastName": "Rajput",
+      "email": "ritik@gmail.com",
+      "phoneNumber": "8765432190",
+      "hireDate": "2023-01-24T18:30:00.000Z",
+      "designation": "Java Developer",
+      "gender": "M",
+      "salary": 200000,
+      "isMarried": true,
+      "id": 9
+    },
+    {
+      "firstName": "Yogesh",
+      "lastName": "Joshi",
+      "email": "yogesh@gmail.com",
+      "phoneNumber": "7865432190",
+      "hireDate": "2023-01-17T18:30:00.000Z",
+      "designation": "Python Developer",
+      "gender": "M",
+      "salary": 300000,
+      "isMarried": false,
+      "id": 10
+    },
+    {
+      "firstName": "Toshi",
+      "lastName": "Thakuriya",
+      "email": "toshi@gmail.com",
+      "phoneNumber": "4509876321",
+      "hireDate": "2023-01-22T18:30:00.000Z",
+      "designation": "Cook",
+      "gender": "F",
+      "salary": 39999000,
+      "isMarried": false,
+      "id": 11
+    },
+    {
+      "firstName": "Rahul",
+      "lastName": "sharma",
+      "email": "rahulsharma@gmail.com",
+      "phoneNumber": "9098909087",
+      "hireDate": "2023-08-31T18:30:00.000Z",
+      "designation": "Software Engineer",
+      "gender": "M",
+      "salary": 60000,
+      "isMarried": true,
+      "id": 12
+    }
+  ],
+  "Designations": [
+    {
+      "designationTitle": "Manager",
+      "id": 1
+    },
+    {
+      "designationTitle": "Cook",
+      "id": 2
+    },
+    {
+      "designationTitle": "Java Developer",
+      "id": 3
+    },
+    {
+      "designationTitle": "Node Developer",
+      "id": 4
+    },
+    {
+      "designationTitle": "Trainee Programmer",
+      "id": 5
+    },
+    {
+      "designationTitle": "Sr. Software Engineer",
+      "id": 6
+    },
+    {
+      "designationTitle": "Software Engineer",
+      "id": 7
+    },
+    {
+      "designationTitle": "Security Guard",
+      "id": 8
+    },
+    {
+      "designationTitle": "Python Developer",
+      "id": 9
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
